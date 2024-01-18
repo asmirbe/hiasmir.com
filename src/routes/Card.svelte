@@ -29,7 +29,7 @@
 	a {
 		text-decoration: none;
 		border-radius: 15px;
-		background-color: #eee;
+		background-color:#f8f8f8;
 		gap: 8px;
 		display: grid;
 		padding: 12px 15px;

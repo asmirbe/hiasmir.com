@@ -29,7 +29,7 @@ export const sideProjects = [
 		// link: '#',
 		content: {
 			title: "Context-sensitive interfaces",
-			paragraph: "In 2024, I aim to launch a platform where individuals from diverse backgrounds can share and discover inspiring setups. It will be the ideal place to find the perfect setup to fuel your creativity and enhance your workspace.",
+			paragraph: "In 2024, I aim to launch a platform where individuals from diverse backgrounds can share and discover inspiring setups. It will be the ideal place to find the perfect setup to fuel your creativity and enhance your personal workspace.",
 		},
 	},
 ];
