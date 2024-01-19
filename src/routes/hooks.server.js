@@ -1,28 +1,24 @@
-import { minify } from 'html-minifier'
+// hooks.server.js
+
+import { minify } from 'html-minifier-terser'
+import { dev, prerendering } from '$app/environment'
 
 const minification_options = {
-  collapseBooleanAttributes: true,
   collapseWhitespace: true,
-  conservativeCollapse: true,
-  decodeEntities: true,
-  html5: true,
-  ignoreCustomComments: [/^#/],
-  minifyCSS: true,
-  minifyJS: true,
-  removeAttributeQuotes: true,
+  collapseInlineTagWhitespace: true,
   removeComments: true,
-  removeOptionalTags: true,
-  removeRedundantAttributes: true,
-  removeScriptTypeAttributes: true,
-  removeStyleLinkTypeAttributes: true,
-  sortAttributes: true,
-  sortClassName: true
+  minifyCSS: true,
+  minifyJS: true
 }
 
 export async function handle({ event, resolve }) {
-  const response = await resolve(event, {
-    transformPageChunk: ({ html }) => minify(html, minification_options)
-  })
+  let response = resolve(event)
+
+  if (!dev && prerendering) {
+    response = await resolve(event, {
+      transformPageChunk: ({ html }) => minify(html, minification_options)
+    })
+  }
 
   return response
 }

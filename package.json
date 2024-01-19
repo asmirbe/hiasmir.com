@@ -17,6 +17,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "^4.0.5"
+		"@sveltejs/adapter-vercel": "^4.0.5",
+		"html-minifier-terser": "^7.2.0"
 	}
 }
