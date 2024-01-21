@@ -15,7 +15,6 @@ export const sideProjects = [
 	{
 		title: "Baryum",
 		date: "2022",
-		image: '/img/baryum.svg',
 		link: 'https://baryum.co',
 		content: {
 			title: "Context-sensitive interfaces",
@@ -25,7 +24,6 @@ export const sideProjects = [
 	{
 		title: "Qrode",
 		date: "2024",
-		// image: '/img/setups_gallery.svg',
 		link: 'https://qrode.hiasmir.com/',
 		content: {
 			title: "Qrode",

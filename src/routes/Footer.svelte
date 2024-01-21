@@ -2,10 +2,10 @@
 	import { links } from '../state.js';
 </script>
 <footer>
-	<h5>Lets reach out</h5>
+	<h5>Let's talk</h5>
 	<p>
 		<a href="mailto:hello@hiasmir.com">Email me</a> or reach out on <a href="https://twitter.com/asmirbe_" target="_blank">@asmirbe</a>
-		to talk about weather, design or anything else you're interested in! At present, I'm trying to improve my Arabic language skills, مرحبا! This site has been developed using SvelteKit.</p>
+		to chat about weather, design or anything else you're interested in! At present, I'm trying to improve my Arabic language skills, مرحبا!</p>
 		<ul>
 			{#each links as link}
 				<li>

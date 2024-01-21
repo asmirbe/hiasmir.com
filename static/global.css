@@ -12,7 +12,7 @@ body {
 	color: #141414;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.65;
 	font-family: Inter, sans-serif;
 	font-feature-settings: "liga" 1, "calt" 1;
 }
@@ -29,14 +29,16 @@ h6 {
 
 a {
 	color: #141414;
-	transition: color .2s;
 	text-decoration: underline;
+	text-underline-position: from-font;
+	text-decoration-thickness: 1px;
+	text-decoration-color: #bcbbb5;
 }
 p {
 	margin-bottom: 1rem;
 }
 a:hover {
-	color: #2c68f6;
+	text-decoration-color: #8d8d86;
 }
 ::selection {
 	color: #ffffff;

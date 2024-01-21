@@ -7,10 +7,10 @@
 <time>{data.date}</time>
 <a href={data.link} target="_blank">
 	<main>
-		<!-- {#if data.image}
-		<img src={data.image} alt="" />
-		{/if} -->
-			<h6>
+		<h6>
+				{#if data.image}
+					<picture>{@html data.image}</picture>
+				{/if}
 				{data.title}
 			</h6>
 			{#if data.link}
@@ -28,7 +28,7 @@
 		grid-template-columns: 25% auto;
 	}
 	a:hover main {
-		background: #f5f5f5;
+		background: #f5f4f4;
 	}
 	div h6 {
 		font-weight: 500;
@@ -36,7 +36,7 @@
 		display: flex;
 		align-items: center;
 
-		gap: 1rem;
+		gap: .5rem;
 		font-size: 1rem;
 		font-weight: 600;
 		color: #000;
@@ -48,6 +48,15 @@
 	}
 	div a {
 		text-decoration: none;
+	}
+	div main picture {
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	div main .dot {
 		width: 0.5rem;
