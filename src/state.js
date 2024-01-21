@@ -23,13 +23,29 @@ export const sideProjects = [
 		},
 	},
 	{
-		title: "Setups gallery",
+		title: "Qrode",
 		date: "2024",
 		// image: '/img/setups_gallery.svg',
-		// link: '#',
+		link: 'https://qrode.hiasmir.com/',
 		content: {
-			title: "Context-sensitive interfaces",
+			title: "Qrode",
 			paragraph: "In 2024, I plan to create a platform where people from different backgrounds can share and find inspiring setups. It will be the perfect place to find the best setup to help you be creative and make your personal workspace better.",
 		},
 	},
 ];
+
+
+export const links = [
+	{
+		title: "Github",
+		link: "https://github.com/asmirbelkic"
+	},
+	{
+		title: "X / Twitter",
+		link: "https://twitter.com/asmirbe_"
+	},
+	{
+		title: "Codepen",
+		link: "https://codepen.io/asmirbe"
+	}
+]

@@ -35,7 +35,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
 	on:mouseenter={() => (hovering = true)}
-	on:mouseleave={() => (hovering = false)}
+
 	on:touchstart={() => {
 		setTimeout(() => (hovering = false), 2000);
 		hovering = true;
