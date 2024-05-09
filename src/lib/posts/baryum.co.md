@@ -140,7 +140,7 @@ Bascially for the visitors adding a website is simple. You just need to fill out
 
 <!-- To analyze the fonts used on a website, I created a Font Analyzer tool that detects the font stack of each element and determines the current font being used. The tool then generates a list of unique fonts and the number of times they are used on the page. -->
 
-```JS
+<!-- ```JS
 const user = await client.chat.completions.create({
   messages: [
     {
@@ -155,4 +155,4 @@ const user = await client.chat.completions.create({
     name: 'User'
   }
 });
-```
+``` -->
