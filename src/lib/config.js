@@ -4,8 +4,6 @@ export const siteURL = "hiasmir.com";
 export const siteLink = "https://hiasmir.com/";
 export const siteAuthor = "Asmir";
 
-export const postsPerPage = 10
-
 export const links = [
 	{
 		title: "hello@hiasmir.com",

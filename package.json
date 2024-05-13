@@ -1,32 +1,32 @@
 {
-	"name": "hiasmir2",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev --host",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"html-minifier": "^4.0.0",
-		"mdsvex": "^0.11.0",
-		"sass": "^1.76.0",
-		"svelte": "^4.2.7",
-		"svelte-highlight": "^7.6.0",
-		"svelte-preprocess": "^5.1.4",
-		"vite": "^5.0.3"
-	},
-	"type": "module",
-	"dependencies": {
-		"@notionhq/client": "^2.2.14",
-		"@rollup/plugin-alias": "^5.1.0",
-		"@rollup/plugin-node-resolve": "^15.2.3",
-		"@sveltejs/adapter-vercel": "^4.0.5",
-		"@vercel/analytics": "^1.2.2",
-		"@web/dev-server-rollup": "^0.6.2",
-		"html-minifier-terser": "^7.2.0"
-	}
+  "name": "hiasmir2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "html-minifier": "^4.0.0",
+    "mdsvex": "^0.11.0",
+    "sass": "^1.76.0",
+    "svelte": "^4.2.7",
+    "svelte-highlight": "^7.6.0",
+    "svelte-preprocess": "^5.1.4",
+    "vite": "^5.0.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@sveltejs/adapter-vercel": "^4.0.5",
+    "@vercel/analytics": "^1.2.2",
+    "@web/dev-server-rollup": "^0.6.2",
+    "html-minifier-terser": "^7.2.0"
+  }
 }

@@ -127,8 +127,8 @@ media:
     fonts = FontAnalyzer.init();
     fonts = fonts.sort((a, b) => b.occurences - a.occurences);
   }
- import IconLink from '$components/Icon/IconLink.svelte';
-   import Highlight from "svelte-highlight";
+  import IconLink from '$components/Icon/IconLink.svelte';
+  import Highlight from "svelte-highlight";
 
 </script>
 

@@ -22,7 +22,7 @@
 </svelte:head>
 
 <main>
-	<div class="post">
+	<section class="post">
 		<header>
 			<div class="inline">
 				<Button style="margin-left: -6px" href="/">Back to Home</Button>
@@ -37,7 +37,7 @@
 		<section class="post-content">
 			<svelte:component this={PostContent} />
 		</section>
-	</div>
+	</section>
 </main>
 
 <style lang="scss">

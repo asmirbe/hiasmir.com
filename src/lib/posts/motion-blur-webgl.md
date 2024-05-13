@@ -16,16 +16,15 @@ media:
 <script>
 	import ComponentWrapper from '$components/ComponentWrapper.svelte';
 	import Media from '$components/Post/Media.svelte';
+  import IconLink from '$components/Icon/IconLink.svelte';
 
   // Components in this post
 	import InputRange from '$postcomp/InputRange.svelte';
 	import CircleSlider from '$postcomp/CircleSlider/CircleSlider.svelte';
-
 	let value = 0;
-
 </script>
 
-On May 5, 2024, I saw a tweet from [Alex Widua](https://twitter.com/alexwidua/status/1734636066336882996), who created a SwiftUI prototype that I really liked.
+On May 5, 2024, I saw a tweet from [Alex Widua <IconLink/>](https://twitter.com/alexwidua/status/1734636066336882996), who created a SwiftUI prototype that I really liked.
 
 So, I decided to reproduce it using Svelte and WebGL.
 For the challenge, I didn't want to use any external libraries, I did everything from scratch, which helped me better understand WebGL & GLSL.

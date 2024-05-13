@@ -1,0 +1,45 @@
+{
+	"Link": {
+		"prefix": "!link",
+		"description": "",
+		"scope": "",
+		"body": [
+			"<IconLink/>"
+		]
+	},
+	"Base markdown post": {
+		"prefix": "!post",
+		"description": "",
+		"scope": "",
+		"body": [
+			"---",
+			"title: ${1:$TM_FILENAME}",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+			"link: ${2:https://}",
+			"excerpt: ${3}",
+			"",
+			"# Home page thumbnail",
+			"thumbnail:",
+			"  - src: ",
+			"    poster:",
+			"    caption: ",
+			"",
+			"# Post content meia",
+			"media:",
+			"  - type: ${4:\"video\" or \"image\"}",
+			"    src: ",
+			"    poster:",
+			"---",
+			"",
+			"<script>",
+			"</script>",
+			"",
+			"",
+			"<!---",
+			"<ComponentWrapper title=\"Component.svelte\">",
+			"\tCode ...",
+			"</ComponentWrapper>",
+			"-->"
+		]
+	}
+}
