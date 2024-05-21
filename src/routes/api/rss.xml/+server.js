@@ -1,6 +1,6 @@
 // IMPORTANT: update all these property values in src/lib/config.js
 import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config'
-
+import {serializeNonPOJOs} from '$lib/js/utils.js';
 export const prerender = true
 
 export const GET = async () => {
@@ -12,7 +12,8 @@ export const GET = async () => {
 		})
 	)
 	.then(posts => {
-		return posts.sort((a, b) => new Date(b.date) - new Date(a.date))
+    const data = serializeNonPOJOs(posts);
+		return data.sort((a, b) => new Date(b.date) - new Date(a.date))
 	})
 
 	const body = render(data)

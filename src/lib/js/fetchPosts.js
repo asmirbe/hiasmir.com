@@ -1,3 +1,4 @@
+import {serializeNonPOJOs} from './utils.js';
 // Get media type from extension
 const getMediaType = (src) => {
 	const ext = src.split(".").pop();
@@ -13,9 +14,10 @@ const getMediaType = (src) => {
 	return mediaTypes[ext] || "unknown";
 };
 
+
 // Get video aspect ratio
 const fetchPosts = async ({ offset = 0, category = "" } = {}) => {
-	const posts = await Promise.all(
+	const data = await Promise.all(
 		Object.entries(import.meta.glob("/src/lib/posts/**/*.md")).map(async ([path, resolver]) => {
 			const { metadata } = await resolver();
       const isArchived = path.includes("archived");
@@ -23,7 +25,7 @@ const fetchPosts = async ({ offset = 0, category = "" } = {}) => {
 			return { ...metadata, slug, archived: isArchived };
 		})
 	);
-
+  const posts = serializeNonPOJOs(data);
 	let sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 	if (offset) {

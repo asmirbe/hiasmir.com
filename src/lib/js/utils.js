@@ -22,3 +22,7 @@ export const formatTime = (date) => {
 	minutes = minutes < 10 ? "0" + minutes : minutes;
 	return {time:`${hours}:${minutes}`, ampm:ampm};
 };
+
+export const serializeNonPOJOs = (value) => {
+  return JSON.parse(JSON.stringify(value));
+};

@@ -1,4 +1,5 @@
 import { error, redirect } from "@sveltejs/kit";
+import {serializeNonPOJOs} from '$lib/js/utils.js';
 
 export const load = async ({ params }) => {
 	try {

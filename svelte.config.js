@@ -25,7 +25,7 @@ const config = {
 		adapter: adapter(),
 		prerender: {
       entries: [
-        '*',
+        '*'
       ]
     },
 		alias: {
