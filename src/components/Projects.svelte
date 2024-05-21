@@ -3,7 +3,7 @@
 	export let posts;
 
   let projects = posts.filter((item) => item.archived === false).sort((a, b) => new Date(b.date) - new Date(a.date));
-  let archived = posts.filter((item) => item.archived === true);
+  let archived = posts.filter((item) => item.archived === true && item.published === true).sort((a, b) => new Date(b.date) - new Date(a.date));
 </script>
 
 <main>

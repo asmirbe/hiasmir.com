@@ -1,14 +1,17 @@
-import { error } from '@sveltejs/kit'
+import { error, redirect } from "@sveltejs/kit";
 
 export const load = async ({ params }) => {
 	try {
-		const project = await import(`../../../lib/posts/archived/${params.project}.md`)
-
+		const project = await import(`../../../lib/posts/archived/${params.project}.md`);
+		// console.log(project.metadata.published);
+		// if (project.metadata.published === false) error(404, {
+		// 	message: 'Not found'
+		// });
 		return {
 			PostContent: project.default,
-			meta: { ...project.metadata, slug: params.post }
-		}
-	} catch(err) {
+			meta: { ...project.metadata, slug: params.post },
+		};
+	} catch (err) {
 		error(404, err);
 	}
-}
+};

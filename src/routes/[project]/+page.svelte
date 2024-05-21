@@ -4,6 +4,7 @@
 	const { PostContent } = data;
 	const { title, excerpt, media } = data.meta;
 	import Media from "$components/Post/Media.svelte";
+	import IconX from "$components/Icon/IconX.svelte";
 	import IconLink from "$components/Icon/IconLink.svelte";
 	import "$style/post.scss";
 </script>
@@ -24,9 +25,9 @@
 <main>
 	<section class="post">
 		<header>
-			<div class="inline">
-				<Button style="margin-left: -6px" href="/">Back to Home</Button>
-				<Button style="margin-right: -6px" href={data.meta.link} target="_blank">Visit <IconLink /></Button>
+			<div class="top">
+				<Button href={data.meta.link} target="_blank">Visit <IconLink /></Button>
+				<Button layout="circle" size="28" href="/"><IconX /></Button>
 			</div>
 			<h1>{title}</h1>
 			{#if excerpt}
@@ -39,6 +40,7 @@
 		</section>
 	</section>
 </main>
+<svelte:window on:keydown={(e) => e.key === "Escape" && (window.location.href = "/")} />
 
 <style lang="scss">
 	header {
@@ -46,12 +48,17 @@
 		gap: 1rem;
 		padding: 2rem 2rem 0 2rem;
 		h1 {
+			font-size: 21px;
 			margin-top: 2rem;
 		}
-		.inline {
+		.top {
 			display: flex;
-			justify-content: space-between;
-			gap: 1rem;
+			z-index: 9999;
+			position: fixed;
+			top: 16px;
+			right: 16px;
+			justify-content: center;
+			gap: .75rem;
 		}
 
 		p {

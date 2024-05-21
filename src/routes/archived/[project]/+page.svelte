@@ -1,6 +1,9 @@
 <script>
+	import { error, redirect } from "@sveltejs/kit";
+
 	import Button from "$components/Button.svelte";
 	export let data;
+	// if(!data) throw error(404);
 	const { PostContent } = data;
 	const { title, excerpt, media } = data.meta;
 	import Media from "$components/Post/Media.svelte";

@@ -34,6 +34,7 @@ const fetchPosts = async ({ offset = 0, category = "" } = {}) => {
 		date: post.date,
 		title: post.title,
 		slug: post.slug.toLowerCase(),
+		published: post.published || false,
 		link: post.link,
     archived: post.archived,
 		excerpt: post.excerpt,

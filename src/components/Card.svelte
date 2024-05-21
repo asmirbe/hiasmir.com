@@ -8,7 +8,7 @@
 <main>
 	<header>
 		<Button href="/{data.slug}">View {data.title}</Button>
-		<Button href="{data.link}" target="_blank">
+		<Button href="{data.link}" layout="circle" size="28" target="_blank">
 			<IconLink />
 		</Button>
 	</header>

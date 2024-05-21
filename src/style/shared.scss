@@ -69,13 +69,12 @@
   font-size: 1rem;
   line-height: 1.25rem;
   height: 28px;
-  padding: 6px 10px;
   transition: background-color 0.2s ease-in-out;
   @media (min-width: 768px) {
     padding: 4px 8px;
     font-size: 0.875rem;
   }
   &:hover {
-    background-color: #e5e5e5;
+    background-color: #ebebeb;
   }
 }
